@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Guess</title>
+</head>
+<body>
+
+<nav>
+  <div><img src="nami-modified.png" alt=""></div>
+  <div class="search">
+    <form>
+      <input id="find" type="text" placeholder="Search..." onkeyup="search()">
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <div class="pushcart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>0</span>
+    </div>
+    <div class="user"><i class="fa-solid fa-circle-user"></i></div>
+  </div>
+</nav>
+
+<div class="product-list">
+  <div class="product">
+
+
+  </div>
+</div>
+
+
+</body>
+<style>
+
+  nav{
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background:rgba(255, 255, 255, .2);
+    backdrop-filter: blur(25px);
+    border-bottom: 3px solid rgba(0, 0, 0, .7);
+    box-shadow: 0px 3px 5px 0px rgba(255, 255, 255, 0.75);
+
+
+
+  }
+  nav div img{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .search{
+    display: flex;
+    margin-top: 20px;
+    gap: 0;
+    position: relative;
+  }
+  .search form{
+    margin-right: 30px;
+  }
+  .search form input{
+    height: 50px;
+    width: 500px;
+    font-size: 18px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid orange;
+
+  }
+  .search form button{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    margin-left: -5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .search form button:active{
+    transform: scale(0.96)
+  }
+  .search form button:hover{
+    color : black;
+  }
+  .pushcart{
+    margin-right: 100px;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  .pushcart i{
+    font-size: 25px;
+    padding: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+  }
+  .pushcart i:active{
+    transform: scale(0.96);
+  }
+  .pushcart span{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    right: -10px;
+    top: 10px;
+
+  }
+  .search  .user i {
+    margin-right: 40px;
+    font-size: 40px;
+    margin-top: 5px;
+    color: orange;
+    transition: tranform 0.2s ease;
+    padding: 5px;
+  }
+  .search  .user i:active{
+    transform: scale(0.96);
+  }
+
+</style>
+</html>
